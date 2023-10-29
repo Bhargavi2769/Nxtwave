@@ -62,7 +62,7 @@ app.get("/states/", async (request, response) => {
   );
 });
 
-app.get("/states/:stateId", async (request, response) => {
+app.get("/states/:stateId/", async (request, response) => {
   const getStateQuery = `
     SELECT 
         *
