@@ -63,6 +63,7 @@ app.get("/states/", async (request, response) => {
 });
 
 app.get("/states/:stateId/", async (request, response) => {
+  const { stateId } = request.params;
   const getStateQuery = `
     SELECT 
         *
