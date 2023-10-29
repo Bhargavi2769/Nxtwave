@@ -151,7 +151,7 @@ app.get("/districts/:districtId/details/", async (request, response) => {
 });
 
 app.get("/states/:stateId/stats/", async (request , response) => {
-    const { stateId } request.params;
+    const { stateId } = request.params;
     const getStatesStatQuery = `
     SELECT
         SUM(cases),
